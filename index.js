@@ -1,3 +1,4 @@
+
 var buttonColors=["red","blue","green","yellow"];
 
 var gamePattern=[];
@@ -7,6 +8,12 @@ var userClickedPattern=[];
 var started=false;
 
 var level=0;
+
+if (window.innerWidth < 768) {
+    document.addEventListener("touchstart", function () {
+        if (!started) startGame();
+    }, { once: true });
+}
 
 $(document).keydown(function()
 {
@@ -101,3 +108,17 @@ function animatePress(currentColor)
         $("#"+currentColor).removeClass("pressed");
     },100);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
