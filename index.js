@@ -9,7 +9,7 @@ var started=false;
 
 var level=0;
 
-$(document).keydown(function()
+$(document).on("keydown touchfunction()
 {
     if(!started)
     {
@@ -21,7 +21,7 @@ $(document).keydown(function()
 });
 
 if (window.innerWidth < 768) {
-    document.addEventListener("touchstart", function () {
+    document.addEventListener("click touchstart", function () {
         if (!started) startGame();
     }, { once: true });
 }
