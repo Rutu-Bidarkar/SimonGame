@@ -17,6 +17,19 @@ body {
 
 }
 
+.bstart {
+  margin: 25px;
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+  background-color: #FEF2BF;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  color: #011F3F;
+}
+
 .btn {
   margin: 25px;
   display: inline-block;
