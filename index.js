@@ -15,16 +15,28 @@ if (window.innerWidth < 768) {
     }, { once: true });
 }
 
-$(document).keydown(function()
+$(".bstart").click(function()
 {
     if(!started)
-    {
-        $("#level-title").text("Level "+level);
-        nextSequence();
-        started=true;
-    }
+        {
+            $("#level-title").text("Level "+level);
+            nextSequence();
+            started=true;
+        }
+
+})
+
+
+// $(document).keydown(function()
+// {
+//     if(!started)
+//     {
+//         $("#level-title").text("Level "+level);
+//         nextSequence();
+//         started=true;
+//     }
     
-});
+// });
 
 
 $(".btn").click(function()
@@ -108,3 +120,6 @@ function animatePress(currentColor)
         $("#"+currentColor).removeClass("pressed");
     },100);
 }
+
+
+
